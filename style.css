@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F7ECDE;
+    /* Set to match the color of the main/div */
+}
+
+/* Set background color for all relevant elements */
+header,
+nav,
+article,
+section,
+footer {
+    background-color: #F7ECDE;
+}
+
+/* Header, Nav, Main, Article, Section, Footer */
+header,
+nav,
+article,
+section,
+footer {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F7ECDE;
+}
+
+/* Header, Nav, Footer */
+header,
+nav,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* Set the height of header, nav, and footer to 50px */
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Content */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    min-height: 100px;
+    /* Adjust the height as needed */
+    margin: 10px;
+    padding: 0;
+    /* Remove padding */
+}
+
+article,
+section {
+    margin: 10px;
+    padding: 10px;
+    background-color: #F7ECDE;
+    /* Set to match the color of the main/div */
+    width: calc(100% - 20px);
+    /* Set width to take up available space with margin accounted for */
+}
+
+/* Make articles with class .g1 span the full width */
+article.g1,
+section.g1 {
+    grid-column: span 2;
+    /* Span two grid columns */
+    background-color: #F7ECDE;
+    /* Set to match the color of the main/div */
+    width: calc(100% - 20px);
+    /* Set width to take up available space with margin accounted for */
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+
+    article,
+    section {
+        width: calc(100% - 20px);
+        /* Set width to take up available space with margin accounted for on smaller screens */
+    }
+
+    /* Reset grid-column span for smaller screens */
+    article.g1,
+    section.g1 {
+        grid-column: span 1;
+    }
+}
+
+/* Footer */
+.footer,
+header {
+    background-color: #DBBC8E;
+    text-align: center;
+    height: 50px;
+    /* Set the height of the header and footer to 50px */
+}
+
+/* Navigation */
+nav {
+    background-color: #D9D9D9;
+    border-radius: 30px;
+}
+
+/* Hide Element */
+.g1 {
+    visibility: hidden;
+}
+
+/* Show Element */
+main .g1 {
+    visibility: visible;
+}
+
+/* New styles to ensure spacing between menu items */
+nav a {
+    padding: 10px;
+}
+
+
+article {
+    display: flex;
+    align-items: center;
+}
+
+article img {
+    margin-left: 10px;
+    /* Pas de marge naar wens aan */
+    max-width: 100%;
+    /* Zorg ervoor dat de afbeelding binnen het artikel past */
+}

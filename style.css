@@ -144,3 +144,12 @@ article img {
     max-width: 100%;
     /* Zorg ervoor dat de afbeelding binnen het artikel past */
 }
+
+
+/* Voeg deze regel toe aan je bestaande stylesheet */
+
+article img,
+section img {
+    max-width: 100%;
+    height: auto;
+}
